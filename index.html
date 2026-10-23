@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тапсырмалар тізімі</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Тапсырмалар тізімі</h1>
+    <p>Күнделікті жұмыстарды жоспарлауға арналған шағын веб-қосымша.</p>
+    <form id="task-form">
+      <label for="task-input">Жаңа тапсырма</label>
+      <div class="form-row">
+        <input id="task-input" type="text" maxlength="120" placeholder="Мысалы: зертханалық жұмысты орындау" required>
+        <button type="submit">Қосу</button>
+      </div>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+    <ul id="task-list" aria-label="Тапсырмалар"></ul>
+  </main>
+</body>
+</html>
